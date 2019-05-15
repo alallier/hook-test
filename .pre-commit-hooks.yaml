@@ -1,0 +1,7 @@
+-   id: regex-commit-begin
+    name: regex-commit-begin
+    description: Check regex start of commit message
+    entry: regex-commit-begin
+    language: node
+    types: [node]
+    args: [-i]
