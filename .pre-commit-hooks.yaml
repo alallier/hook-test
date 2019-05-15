@@ -1,5 +1,6 @@
--   id: regex-commit-begin
-    name: regex-commit-begin
+-   id: regex-starts-with-commit
+    name: regex-starts-with-commit
     description: Check regex start of commit message
-    entry: regex-commit-begin
+    entry: regex-starts-with-commit
     language: node
+    args: ['[A-Z][A-Z_0-9]+-[0-9]+']
