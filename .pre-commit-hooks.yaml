@@ -3,4 +3,3 @@
     description: Check regex start of commit message
     entry: regex-commit-begin
     language: node
-    args: [-i]
