@@ -2,13 +2,16 @@
 
 var fs = require('fs')
 
-var regexPattern = RegExp('[A-Z][A-Z_0-9]+-[0-9]+')
+var patternFromArgs = process.argv[2]
+var commitTempFile = process.argv[3]
 
-console.log(process.argv)
+var regexPattern = RegExp(patternFromArgs)
 
 console.log('Pre-commit hook running')
 
-var results = fs.readFileSync(process.argv[2])
+console.log(process.argv)
+
+var results = fs.readFileSync(commitTempFile)
 
 if (regexPattern.test(results)) {
   console.log('Valid commit message')
