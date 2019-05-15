@@ -5,8 +5,6 @@ console.log('\n')
 
 var fs = require('fs')
 
-console.log(process.argv)
-
 var patternFromArgs = process.argv[2]
 var errorMessageFromArgs = process.argv[3]
 var commitTempFile = process.argv[4]
